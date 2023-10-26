@@ -54,6 +54,7 @@ button {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
   transition: 0.2s linear;
   padding-bottom: 20px;
 }
@@ -86,10 +87,14 @@ button {
   width: 100%;
   background-image: url(../images/intro.png);
   background-size: contain;
+  position: relative;
 }
 .intro-content {
   max-width: 529px;
   width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .intro-title {
   font-size: 72px;
