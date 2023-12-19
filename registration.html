@@ -3,9 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>registration</title>
+
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+
 </head>
 <body>
-    
+    <div class="registration">
+<!-- registration -->
+        <div class="register-active">
+            <!-- content -->
+            <div class="content-side registration-container">
+                <span class="registration-container-title"> Hello friends</span>
+                <span class="contet-text">If you already have an account login here and have fun </span>
+                <button class="form-btn" type="submit">Login</button>
+            </div>
+            <!-- register form -->
+            <div class="form-side registration-container">
+                <h3 class="registration-container-title">Register here</h3>
+                <form action="#">
+                  <!-- first name -->
+                    <input type="text" id="fname" name="firstname" placeholder="First Name" required />
+                
+                    <!-- last name  -->
+                    <input type="text" id="lname" name="lastname" placeholder="Last Name" required />
+                    
+                    <!-- Email   -->
+                        <input type="email" id="email" name="email" placeholder="Email"required/>  
+                    <!-- Password:   -->
+                        <input type="Password" id="pass" name="pass" placeholder="Password"> 
+                        <!-- Re-type password:   -->
+                        <input type="Password" id="repass" name="repass" placeholder="Repeate Password"> <br> <br>  
+                    <!-- remember forgot -->
+                        <div class="remember-forgot">
+                            <label>
+                              <input class="remember-forgot-input" type="checkbox" />
+                              agree to the terms & conditions</label
+                            >
+                          </div>
+                          <!-- have acount -->
+                          <div class="login-register">
+                            <p class="login-register-content">
+                              Already have an acount?
+                              <a href="#!" class="login-link">Login</a>
+                            </p>
+                          </div>     
+                </form>
+            </div>
+
+        </div>
+<!-- login -->
+        <div class="login-active" hidden> 
+
+
+
+        </div>
+    </div>
+
 </body>
 </html>

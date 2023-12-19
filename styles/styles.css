@@ -1,16 +1,18 @@
 body {
+  position: relative;
   background: #1c1814;
   color: #fff;
   font-style: normal;
   line-height: normal;
-  /* height: 100vh; */
+  height: 100vh;
+  
 }
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6{
   font-family: "Righteous";
   font-size: 48px;
   font-style: normal;
@@ -27,7 +29,7 @@ p {
   color: rgba(255, 255, 255, 0.8);
 }
 
-button {
+/* button {
   background: transparent;
   border: none;
   color: #fff;
@@ -37,7 +39,7 @@ button {
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-}
+} */
 img{
   max-width: 100%;
 }
@@ -118,4 +120,107 @@ img{
   padding: 24px 40px;
   gap: 10px;
   background: #c99e71;
+}
+ 
+
+
+
+
+
+
+/* registration form styles */
+.registration{
+  
+  max-width: 1182px;
+  width: 80%;
+  border: 2px solid #c99e71;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;  
+  transform: translate(-50%, -50%);
+  border-radius: 22px;
+  overflow: hidden;
+}
+.register-active{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.registration-container{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+/* content */
+.content-side{
+  background-image: 
+      linear-gradient(
+        rgba(24, 24, 25, 0.829), 
+        rgba(100, 107, 110, 0.849)
+      ),
+      url(../images/registration-bg.jpg);
+      background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+span{
+  font-family: "Urbanist";
+  text-align: center;
+  line-height: normal;
+}
+.registration-container-title{
+  font-family: "Urbanist";
+  font-size: 58px;
+  font-weight: 900;
+  max-width: 306px;
+  width: 100%;
+}
+.contet-text{
+  font-size: 28px;
+  font-weight: 400;
+}
+.form-btn{
+  width: 322px;
+  margin: auto;
+  padding: 12px 12px;
+  color: #fff;
+  border:#fff 1px solid;
+  border-radius: 22px;
+  background-color: #959492;
+  font-family: "Inter";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+}
+/* from-side */
+.form-side{
+  width: 50%;
+  background-color: white;
+}
+
+.form-side .registration-container-title{
+  color: #1c1814;
+  font-size: 52px;
+}
+
+input{
+  font-family: "Urbanist";
+  display: block;
+  width: 100%;
+  background-color:rgba(198, 197, 197, 0.156) ;
+  border-radius: 12px;
+  font-size: 1em;
+  color: #162938;
+  font-weight: 600;
+  padding: 10px;
+  margin: 16px;
+}
+label{
+  color: black;
 }
