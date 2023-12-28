@@ -100,19 +100,19 @@ cursor: default;
   color: #c99e71;
 }
 
-.header-action{
-/* gap: 48px; */
-}
+/* .header-action{
+gap: 48px;
+} */
 
 .header-action_search,
 .header-action_cart{
   width: 30px;
   height: 30px;
 }
-.header-action_search:hover,
+/* .header-action_search:hover,
 .header-action_cart:hover{
-  /* border-bottom: 1px solid #c99e71; */
-}
+  border-bottom: 1px solid #c99e71;
+} */
 
 .header-action_search:active,
 .header-action_cart:active{
