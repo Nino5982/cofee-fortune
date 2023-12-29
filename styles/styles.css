@@ -26,14 +26,26 @@ button {
   text-transform: uppercase;
   background-color: #c99e71;
 }
+
 .btn-primary:hover{
   background-color: #46321c33;
-
 }
+
+input{
+  display: block;
+  padding: 16px 20px;
+  border: none;
+  font: 500 16px/28px 'Urbanist', Arial, helvetica, sans-serif;
+  color: inherit;
+  background-color: #14110e;
+  outline: none;
+  opacity: 0.7;
+}
+
 
 .container{
   max-width: 1340px;
-  width: 100%;
+  /* width: 100%; */
   margin: 0 auto;
   padding: 0 75px;
 }
@@ -252,258 +264,285 @@ grid-row: 1/3;
  display: inline-block;
 }
 
+/* popular */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-  
+.popular-wrap{
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+  margin-bottom: 56px;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
-  font-family: "Righteous";
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
+
+.popular{
+  padding: 48px 48px 36px;
+  background-color: #121315;
+  text-align: center;
+  text-transform: uppercase;
+
 }
-p {
-  font-family: "Urbanist";
-  font-size: 16px;
-  font-style: normal;
+
+.popular_img{
+  display: block;
+  /* margin-bottom: 37px; */
+
+  display: block;
+  margin: 0 auto 37px;
+  /* margin-bottom: 37px; */
+  width: 190px;
+  height: auto;
+}
+
+.rating{
+display: flex;
+justify-content: center;
+gap: 15px;
+color: #c99e71;
+}
+
+.rating_title{
   font-weight: 500;
-  line-height: 180%;
-  text-transform: capitalize;
-  color: rgba(255, 255, 255, 0.8);
 }
 
-/*  
-img{
-  max-width: 100%;
-}
-.flex-row-directions {
+.rating_list{
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
+  gap: 7px;
 }
-.wrapper {
-  max-width: 1170px;
-  width: 100%;
-  margin: 0 auto;
+
+.rating_item{
+font-size: 16px;
+line-height: 26px;
 }
-.header {
-  max-width: 1920px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  transition: 0.2s linear;
-  padding-bottom: 20px;
+
+.popular_title{
+  margin: 12px 0 20px 0;
+  font: 24px/30px 'Righteous';
+
 }
-.header-wrapper {
-  align-items: center;
-  max-width: 1320px;
-  width: 100%;
-  height: 125px;
-  margin: 0 auto;
-}
-.header-font-style {
-  font-family: "Inter";
+
+.popular_price{
+  display: block;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
 }
-.left-navigation {
-  max-width: 397px;
-  width: 100%;
+
+.popular_price-dark{
+  color: #c99e71;
+  font: 400 18px 'inter', Arial, helvetica, sans-serif;
 }
-.right-navigation-wrapper {
-  width: 417px;
+.popular_btn{
+  text-transform: none;
+  display: none;
+  justify-content: center;
   align-items: center;
-}
-.right-navigation {
-  width: 60%;
-}
-.intro {
-  /* height: 100vh; */
-  /* position: relative; */
-  /* 
-}
-.intro-wrapper{
-  background-image: url(../images/intro.png);
-  background-size: contain;
-  position: relative;
-  background-repeat: no-repeat;
-  height: 864px;
-  width: 1000px;
-}
-.intro-content {
-  max-width: 529px;
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.intro-title {
-  font-size: 72px;
-  margin-bottom: 32px;
-}
-.intro-text {
-  font-size: 20px;
-  margin-bottom: 64px;
-}
-.intro-submit-btn {
-  width: 202px;
-  height: 70px;
-  padding: 24px 40px;
-  gap: 10px;
-  background: #c99e71;
-}
- 
- */
+  gap: 15px;
+width: 170px;
+margin: 38px auto 0;
+padding: 13px 0;
+font: 600 18px/22px 'Urbanist', Arial, helvetica, sans-serif;
 
+}
 
+.popular:hover .rating,
+.popular:hover .popular_price{
+display: none;
+}
+.popular:hover .popular_btn{
+display: flex;
+}
 
-
-
-/* registration form styles */
-/* 
-.registration{
-  
-  max-width: 1182px;
-  width: 80%;
-  border: 2px solid #c99e71;
+.popular_link {
+  display: block;
+  width: 252px;
   margin: 0 auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;  
-  transform: translate(-50%, -50%);
-  border-radius: 22px;
-  overflow: hidden;
 }
-.register-active{
+/* discover */
+.discover-wrap{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 40px;
+  background-color: #1c1814;
+  padding: 85px 80px;
 }
-.registration-container{
-  width: 50%;
+.discover-img{
+  display: block;
+  margin: 0 auto;
+  max-height: 359px;
+  border: 4px #4b3e3173 inset;
+}
+.discover{
+  max-width: 535px;
+  width: 100%;
+}
+
+.discover_title{
+ margin-bottom: 36px;
+text-align: left;
+}
+.discover_link {
+display: block;
+width: 215px;
+margin-top: 36px;
+}
+
+/* menu */
+
+.menu_wrap{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 36px;
+}
+.menu{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  width: 45%;
+  border:1px solid #32323d;
+}
+.menu_img{
+  width: 72px;
+  height: 72px;
+}
+.menu_title{
+  font: 24px/30px 'Righteous';
+}
+.menu_price{
+  display: flex;
+margin-left: auto;
+font-size: 18px;
+color: #C99E71;
+}
+
+/* testimonial */
+
+.testimonial-wrap{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 36px;
+}
+
+.testimonial{
+  padding: 40px;
+  background-color: #1c1814;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  gap: 40px;
 }
-/* content */
-/* 
-.content-side{
-  background-image: 
-      linear-gradient(
-        rgba(24, 24, 25, 0.829), 
-        rgba(100, 107, 110, 0.849)
-      ),
-      url(../images/registration-bg.jpg);
-      background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-span{
-  font-family: "Urbanist";
-  text-align: center;
-  line-height: normal;
-}
-.registration-container-title{
-  font-family: "Urbanist";
-  font-size: 58px;
-  font-weight: 900;
-  max-width: 306px;
-  width: 100%;
-}
-.contet-text{
-  font-size: 28px;
-  font-weight: 400;
-}
-.form-btn{
-  width: 322px;
-  margin: auto;
-  padding: 12px 12px;
-  color: #fff;
-  border:#fff 1px solid;
-  border-radius: 22px;
-  background-color: #959492;
-  font-family: "Inter";
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  text-align: center;
-}
-/* from-side */
-
-
-/* 
-.form-side{
-  width: 50%;
-  background-color: white;
+.testimonial-data{
+display: flex;
+justify-content: space-between;
+gap: 24px;
 }
 
-.form-side .registration-container-title{
-  color: #1c1814;
-  font-size: 52px;
-}
-
-input{
-  font-family: "Urbanist";
+.testimonial_img{
   display: block;
+  width: 129px;
+  height: 149px;
+}
+
+.testimonial-info{
+  display: flex;
+justify-content: space-between;
+align-items: end;
+margin-top: 28px;
+}
+
+.testimonial_name{
+  display: block;
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 22px;
+}
+.testimonial_position{
+  font-size: 14px;
+  line-height: 25px;
+  opacity: 0.8;
+}
+
+.testimonial_list.rating_list{
+  font-size: 20px;
+  color: #faa61a;
+}
+
+/* testimonial-action */
+.testimonial-action, 
+.testimonial-btn-wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonial-count_text{
+display: block;
+margin-bottom: 20px;
+font-size: 20px;
+color: #C99E71;
+}
+
+.testimonial-count_progress{
+appearance: none;
+width: 120px;
+height: 4px;
+}
+.testimonial-count_progress::-webkit-progress-bar{
+  border-radius: 3px;
+  background-color: #2b2926;
+}
+.testimonial-count_progress::-webkit-progress-value{
+  border-radius: 3px;
+background-color: #c99e71;
+}
+.testimonial-btn-wrap{
+  gap: 16px;
+}
+
+
+.testimonial-btn{
+  border-radius: 50%;
+background-color: #121315;
+width: 56px;
+height: 56px;
+cursor: default;
+justify-content: center;
+align-items: center;
+}
+
+.testimonial-btn-active{
+  background-color: #C99E71;
+  color: #010102;
+  cursor: pointer;
+ }
+.testimonial-btn-active:hover{
+ background-color: #4d3f2f;
+}
+
+/* reservation */
+
+.reservation-wrap{
+display: flex;
+justify-content: space-between;
+}
+.reserwation-map{
+width: 50%;
+background: url(../images/registration-bg.jpg) 50% 0%/cover no-repeat;
+}
+.reservation{
+  width: 50%;
+  padding: 72px 48px;
+  background-color: #1c1814;
+
+}
+
+.reservation_input{
   width: 100%;
-  background-color:rgba(198, 197, 197, 0.156) ;
-  border-radius: 12px;
-  font-size: 1em;
-  color: #162938;
-  font-weight: 600;
-  padding: 10px;
-  margin: 16px;
+  margin-bottom: 24px;
+
 }
-label{
-  color: black;
+
+.reservation_btn{
+  width: 205px;
+  margin:56px auto 0;
 }
- */
+
